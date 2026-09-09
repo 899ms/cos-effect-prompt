@@ -88,10 +88,12 @@ ControlNet 是控制图（预处理器），不是提示词；但提示词要配
 
 ## 三、Midjourney 输出格式
 
-自然语言描述 + `--参数`（MJ 具体风格措辞见 `mj-style.md`）：
+自然语言描述 + `--参数`（MJ 具体风格措辞见 `mj-style.md`）。
+
+**默认风格（用户偏好）**：用户没说风格时，默认「**写实 3DCG**」——`high-quality 3D CGI render, realistic PBR skin and fabric, subsurface scattering, soft volumetric light`。用户指定二次元/水墨/电影感等其他风格再切换。
 
 ```
-全身照，脚下金色发光魔法阵，符文旋转，梦幻氛围 --ar 3:4 --v 6 --stylize 200
+全身照，脚下金色发光魔法阵，符文旋转，3D CGI 渲染，写实材质，体积光氛围 --ar 3:4 --v 6 --stylize 200
 ```
 
 常用参数：`--ar`（画幅）、`--v`（版本）、`--s` / `--stylize`（风格化）、`--no`（排除）、`--sref`（风格参考）。
